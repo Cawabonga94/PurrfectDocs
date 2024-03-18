@@ -1,10 +1,10 @@
 {
-    "name": "DocXToPdf",
+    "name": "PurrfectDocs",
     "version": "0.0.1",
     "description": "Convert doc and docx to pdf",
     "author_name": "Cawa",
     "author_url": "https://github.com/Cawabonga94/",
-    "plugin_url": "",
+    "plugin_url": "https://github.com/Cawabonga94/PurrfectDocs",
     "tags": "docx, doc, plugin",
-    "thumb": ""
+    "thumb": "https://github.com/Cawabonga94/PurrfectDocs/blob/main/purrfectdocs.jpeg?raw=true"
 }
