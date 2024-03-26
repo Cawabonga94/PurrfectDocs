@@ -1,7 +1,7 @@
 {
     "name": "PurrfectDocs",
     "version": "0.0.1",
-    "description": "Convert doc and docx to pdf",
+    "description": "This plugin permit to segment DOC, DOCX documents in the rabbithole",
     "author_name": "Cawa",
     "author_url": "https://github.com/Cawabonga94/",
     "plugin_url": "https://github.com/Cawabonga94/PurrfectDocs",
