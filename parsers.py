@@ -15,4 +15,4 @@ class DOCXParser(BaseBlobParser):
             for paragraph in doc.paragraphs:
                 content += f"{paragraph.text}\n"
             metadata = {}
-            yield Document(page_content=content, metadata=metadata)
+            yield Document(page_content=content, metadata={"source": blob.source})
