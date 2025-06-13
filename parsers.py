@@ -16,3 +16,16 @@ class DOCXParser(BaseBlobParser):
                 content += f"{paragraph.text}\n"
             metadata = {}
             yield Document(page_content=content, metadata={"source": blob.source})
+
+from odf.text import P
+from odf.opendocument import load
+
+class ODFParser(BaseBlobParser):
+    def lazy_parse(self, blob: Blob) -> Iterator[Document]:
+        with blob.as_bytes_io() as file:
+            doc = load(file)
+            content = ""
+            for paragraph in doc.getElementsByType(P):
+                content += f"{paragraph.firstChild}\n"
+            metadata = {}
+            yield Document(page_content=content, metadata={"source": blob.source})
